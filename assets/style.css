@@ -1,0 +1,163 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+body{
+    background-color: cadetblue;
+    position: relative;
+    min-height: 100vh
+    
+}
+
+a:hover{
+    color: aqua;
+}
+/* Header and Nav */
+header {
+    padding: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+header h1{
+    display: inline-block;
+    font-size: 50px;
+}
+
+header .nav {
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    display: inline;
+}
+
+header .nav ul{
+    list-style-type: none;
+}
+
+header .nav ul li{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* About me section */
+.About-me{
+    border: 5px solid black;
+    height: auto;
+    width: 75%;
+    padding: 25px;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    
+}
+#mypic {
+    float: right;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+/* Project section */
+.My-Projects{
+    height: 100%;
+    width: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+    border: 5px solid black;
+    margin: 50px;
+    padding: 50px;
+    background-color: gray;
+
+
+}
+
+.My-Projects h2{
+    position: relative;
+    top: -100px;
+    
+
+}
+
+#projectimg{
+    width: 100%;
+    height: 200px;
+}
+/*Main Project */
+#project1{
+    padding: 0px;
+    flex-grow: 2;
+    border: solid 5px red;
+    font-size: 30px;
+    background-color: #ffffff;
+
+}
+/* To be announced projects off to the side of the main one */
+aside{
+    margin: 10px;
+}
+#project2{
+    padding:8px;
+    border: yellow solid 5px;
+    background-image: url(./project2.jpg);
+    background-size: contain;
+}
+#project3{
+    padding:8px;
+    border: green solid 5px;
+    background-image: url(./project3.png);
+    background-size: contain;
+}
+
+#project4{
+    padding:8px;
+    border: blue solid 5px;
+    background-image: url(./project4.jpg);
+    background-size: contain;
+}
+
+/* Footer containing contact info */
+footer {
+    padding: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 20px;   
+}
+
+/* For phones and tablets*/
+  @media screen and (max-width: 768px) {
+    .nav{
+        width: 75%;
+        padding: 25px;
+        margin: 20px;
+        display: inline-block;
+        border: 5px solid black;
+        background-color: darksalmon;
+
+    }
+    .My-Projects{
+        display: flex;
+        flex-direction: column;
+    }
+    #mypic{
+        height: 250px;
+        width: 250px;
+        border-radius: 10px;
+
+    }
+
+  }
+
