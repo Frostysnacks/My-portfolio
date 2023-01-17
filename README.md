@@ -2,6 +2,7 @@
 
 Description
 Hello, this is my new portfolio! On this page you will be able to see a little bit about myself along with a picture, and you'll be able to see my completed projects.
+
 Installation
 N/A
 
